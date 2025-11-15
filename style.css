@@ -55,14 +55,6 @@ header {
 }
 
 
-.footer {
-  padding: 15px;
-  text-align: center;
-  background: #eee;
-  font-size: 0.95rem;
-  margin-top: auto; 
-}
-
 /* MOBILE FIXES */
 @media (max-width: 600px) {
   header {
@@ -73,4 +65,12 @@ header {
     font-size: 1.1rem;
     padding: 22px;
   }
+}
+
+footer {
+  padding: 15px;
+  text-align: center;
+  background: #eee;
+  font-size: 0.95rem;
+  margin-top: auto; 
 }
