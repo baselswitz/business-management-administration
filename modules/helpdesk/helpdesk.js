@@ -1,4 +1,4 @@
-document.getElementById("ticketForm").addEventListener("submit", (e) => {
+document.getElementById("ticketForm").onsubmit = (e) => {
   e.preventDefault();
-  alert("Ticket Submitted! (This is a placeholder)");
-});
+  alert("Ticket submitted!");
+};
