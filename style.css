@@ -54,12 +54,13 @@ header {
   transform: scale(1.05);
 }
 
+/* FOOTER FIXED */
 footer {
-  margin-top: 40px;
-  text-align: center;
   padding: 15px;
+  text-align: center;
   background: #eee;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  margin-top: auto; /* stick to bottom */
 }
 
 /* MOBILE FIXES */
