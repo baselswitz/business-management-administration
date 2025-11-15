@@ -54,6 +54,23 @@ header {
   transform: scale(1.05);
 }
 
+/* About */
+.about {
+  padding: 80px 20px;
+  text-align: center;
+  background: rgba(0,0,0,0.6);
+}
+
+.about h2 {
+  color: #d4af37;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
 
 /* MOBILE FIXES */
 @media (max-width: 600px) {
@@ -67,6 +84,7 @@ header {
   }
 }
 
+
 footer {
   padding: 15px;
   text-align: center;
@@ -74,3 +92,4 @@ footer {
   font-size: 0.95rem;
   margin-top: auto; 
 }
+
