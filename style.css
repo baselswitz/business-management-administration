@@ -1,10 +1,18 @@
-body {
+/* Ensure the page fills full height so footer stays at the bottom */
+html, body {
+  height: 100%;
   margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
   font-family: Arial, sans-serif;
   background: #f5f7fa;
   color: #333;
 }
 
+/* HEADER */
 header {
   text-align: center;
   padding: 20px;
@@ -13,6 +21,7 @@ header {
   font-size: 1.6rem;
 }
 
+/* HERO IMAGE */
 .hero {
   width: 100%;
   height: 200px;
@@ -20,9 +29,11 @@ header {
   border-bottom: 4px solid #004aad;
 }
 
+/* MODULES SECTION */
 .modules {
   padding: 20px;
   text-align: center;
+  flex: 1; /* push footer down */
 }
 
 .modules h2 {
@@ -30,7 +41,8 @@ header {
   margin-bottom: 20px;
 }
 
-.module-grid {
+/* GRID */
+module-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 15px;
@@ -54,13 +66,13 @@ header {
   transform: scale(1.05);
 }
 
-/* FOOTER (fixed tag selector) */
+/* FOOTER FIXED */
 footer {
   padding: 15px;
   text-align: center;
   background: #eee;
   font-size: 0.95rem;
-  margin-top: auto;
+  margin-top: auto; /* stick to bottom */
 }
 
 /* MOBILE FIXES */
