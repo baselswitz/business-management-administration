@@ -1,3 +1,3 @@
-document.querySelector(".toggle-btn").addEventListener("click", () => {
+document.querySelector(".toggle-btn").onclick = () => {
   document.querySelector(".sidebar").classList.toggle("active");
-});
+};
