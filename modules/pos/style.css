@@ -1,0 +1,74 @@
+/* Make page full height so footer stays at the bottom */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #004aad;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  font-size: 1.6rem;
+}
+
+/* Hero Image */
+.page-hero {
+  width: 100%;
+  height: 180px;
+  background: url("../../assets/images/main-bg.jpg") center/cover no-repeat;
+  margin-bottom: 20px;
+}
+
+/* Content grows so footer stays at bottom */
+.content {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* Back Button */
+.back-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #004aad;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/* FOOTER (fixed tag selector) */
+footer {
+  padding: 15px;
+  text-align: center;
+  background: #eee;
+  font-size: 0.95rem;
+  margin-top: auto;
+}
+
+/* MOBILE FIXES */
+@media (max-width: 600px) {
+  header {
+    font-size: 1.3rem;
+  }
+
+  .content {
+    font-size: 1.1rem;
+  }
+
+  .back-btn {
+    font-size: 1.1rem;
+  }
+}
